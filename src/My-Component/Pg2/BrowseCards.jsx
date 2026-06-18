@@ -62,7 +62,7 @@ const BrowseCard = () => {
               Master SEO, social media marketing, paid ads and brand growth strategies.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b73f73aff6f600634235", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a248e7970c2c0752bf4dfe1", e)}>+</button>
             </div>
           </a>
         </div>
@@ -122,7 +122,7 @@ const BrowseCard = () => {
               Frontend + backend development with real world project building experience.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b53373aff6f600634231", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b47b73aff6f60063422e", e)}>+</button>
             </div>
           </a>
         </div>
