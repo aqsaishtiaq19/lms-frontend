@@ -23,7 +23,7 @@ const BrowseCard = () => {
       }
 
       await axios.post(
-        "https://lms-backend-production-ada7.up.railway.app/api/Wishlist/add",
+        "https://lms-backend-production-ada7.up.railway.app/api/wishlist",
         { courseId },
         {
           headers: {
