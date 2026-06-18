@@ -56,7 +56,7 @@ const SignInForm = () => {
     }
     // Only runs if all fields filled!
     axios
-      .post("http://localhost:1919/api/register"
+      .post("https://lms-backend-production-ada7.up.railway.app/api/register"
         , {
         firstName,
         lastName,

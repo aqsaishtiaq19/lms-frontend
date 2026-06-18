@@ -12,7 +12,7 @@ const WishlistCards = () => {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get("http://localhost:1919/api/wishlist", {
+        const res = await axios.get("https://lms-backend-production-ada7.up.railway.app/api/wishlist", {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -49,7 +49,7 @@ const WishlistCards = () => {
     setAnimating(id);
 
     try {
-      await axios.delete(`http://localhost:1919/api/wishlist/${id}`, {
+      await axios.delete(`https://lms-backend-production-ada7.up.railway.app/api/wishlist/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
