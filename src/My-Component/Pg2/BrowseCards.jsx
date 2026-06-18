@@ -4,7 +4,6 @@ import axios from "axios";
 
 const BrowseCard = () => {
 
-  // Wishlist function 
   const addToWishlist = async (courseId, e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -36,8 +35,6 @@ const BrowseCard = () => {
 
     } catch (error) {
       console.log("Wishlist Error:", error.response?.data);
-      console.log("Status:", error.response?.status);
-
       alert(error.response?.data?.message || "Failed to add wishlist");
     }
   };
@@ -52,14 +49,8 @@ const BrowseCard = () => {
             <p className="small">
               Learn frontend, backend, APIs, databases and build real full stack applications.
             </p>
-
             <div className="go-corner">
-              <button
-                className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a248c6870c2c0752bf4dfd9", e)}
-              >
-                +
-              </button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b53373aff6f600634231", e)}>+</button>
             </div>
           </a>
         </div>
@@ -70,14 +61,8 @@ const BrowseCard = () => {
             <p className="small">
               Master SEO, social media marketing, paid ads and brand growth strategies.
             </p>
-
             <div className="go-corner">
-              <button
-                className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a248e7970c2c0752bf4dfe1", e)}
-              >
-                +
-              </button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b73f73aff6f600634235", e)}>+</button>
             </div>
           </a>
         </div>
@@ -88,14 +73,8 @@ const BrowseCard = () => {
             <p className="small">
               Learn music production, rhythm theory, instruments and audio creation basics.
             </p>
-
             <div className="go-corner">
-              <button
-                className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a248e4170c2c0752bf4dfdd", e)}
-              >
-                +
-              </button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b53373aff6f600634231", e)}>+</button>
             </div>
           </a>
         </div>
@@ -106,14 +85,8 @@ const BrowseCard = () => {
             <p className="small">
               Build strength, endurance, health and structured workout training plans.
             </p>
-
             <div className="go-corner">
-              <button
-                className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a248e1470c2c0752bf4dfdb", e)}
-              >
-                +
-              </button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b73f73aff6f600634235", e)}>+</button>
             </div>
           </a>
         </div>
@@ -124,14 +97,8 @@ const BrowseCard = () => {
             <p className="small">
               Learn programming, software engineering, system design and IT tools.
             </p>
-
             <div className="go-corner">
-              <button
-                className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a248c6870c2c0752bf4dfd9", e)}
-              >
-                +
-              </button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b53373aff6f600634231", e)}>+</button>
             </div>
           </a>
         </div>
@@ -142,14 +109,8 @@ const BrowseCard = () => {
             <p className="small">
               Learn UI/UX design, Figma, graphics and modern product design systems.
             </p>
-
             <div className="go-corner">
-              <button
-                className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a248e7970c2c0752bf4dfe1", e)}
-              >
-                +
-              </button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b73f73aff6f600634235", e)}>+</button>
             </div>
           </a>
         </div>
@@ -160,14 +121,8 @@ const BrowseCard = () => {
             <p className="small">
               Frontend + backend development with real world project building experience.
             </p>
-
             <div className="go-corner">
-              <button
-                className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a248c6870c2c0752bf4dfd9", e)}
-              >
-                +
-              </button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b53373aff6f600634231", e)}>+</button>
             </div>
           </a>
         </div>
@@ -178,14 +133,8 @@ const BrowseCard = () => {
             <p className="small">
               Learn entrepreneurship, management, leadership and business skills.
             </p>
-
             <div className="go-corner">
-              <button
-                className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a248e6070c2c0752bf4dfdf", e)}
-              >
-                +
-              </button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b73f73aff6f600634235", e)}>+</button>
             </div>
           </a>
         </div>
@@ -214,12 +163,9 @@ const StyledWrapper = styled.div`
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-
-    /* ✅ TEXT FIX */
     color: #000;
   }
 
-  /* ✅ FORCE ALL TEXT BLACK */
   .card1 h1,
   .card1 p,
   .card1 h3,
