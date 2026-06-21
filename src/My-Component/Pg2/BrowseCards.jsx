@@ -50,7 +50,7 @@ const BrowseCard = () => {
               Learn frontend, backend, APIs, databases and build real full stack applications.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b53373aff6f600634231", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a1f6660e12ad32b90bc1353", e)}>+</button>
             </div>
           </a>
         </div>
@@ -62,7 +62,7 @@ const BrowseCard = () => {
               Master SEO, social media marketing, paid ads and brand growth strategies.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a248e7970c2c0752bf4dfe1", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a21a131b8573c95ad5f51a4", e)}>+</button>
             </div>
           </a>
         </div>
@@ -74,7 +74,7 @@ const BrowseCard = () => {
               Learn music production, rhythm theory, instruments and audio creation basics.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b53373aff6f600634231", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a21a8a7b8573c95ad5f51a6", e)}>+</button>
             </div>
           </a>
         </div>
@@ -86,7 +86,7 @@ const BrowseCard = () => {
               Build strength, endurance, health and structured workout training plans.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b73f73aff6f600634235", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a21a8c6b8573c95ad5f51a8", e)}>+</button>
             </div>
           </a>
         </div>
@@ -98,7 +98,7 @@ const BrowseCard = () => {
               Learn programming, software engineering, system design and IT tools.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b53373aff6f600634231", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a248b5070c2c0752bf4dfd1", e)}>+</button>
             </div>
           </a>
         </div>
@@ -110,7 +110,7 @@ const BrowseCard = () => {
               Learn UI/UX design, Figma, graphics and modern product design systems.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b73f73aff6f600634235", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a21a8c6b8573c95ad5f51a8", e)}>+</button>
             </div>
           </a>
         </div>
@@ -122,7 +122,7 @@ const BrowseCard = () => {
               Frontend + backend development with real world project building experience.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b47b73aff6f60063422e", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a21a8a7b8573c95ad5f51a6", e)}>+</button>
             </div>
           </a>
         </div>
@@ -134,7 +134,7 @@ const BrowseCard = () => {
               Learn entrepreneurship, management, leadership and business skills.
             </p>
             <div className="go-corner">
-              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a24b73f73aff6f600634235", e)}>+</button>
+              <button className="wishlist-btn" onClick={(e) => addToWishlist("6a1f6660e12ad32b90bc1353", e)}>+</button>
             </div>
           </a>
         </div>

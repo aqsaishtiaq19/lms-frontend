@@ -8,6 +8,7 @@ import Card from "./My-Component/Page-1/expert";
 // import Cards from "./My-Component/Page-1/Categories";
 // import CategoriesCard from "./My-Component/Page-1/CategoriesCard";
 
+
 import ControlledTabsExample from "./My-Component/Pg2/CoursesList";
 import Courses from "./My-Component/Page-1/Pg1";
 import WishlistCards from "./My-Component/Pg3-StDetails/WishlistCards";
@@ -49,7 +50,7 @@ function App() {
         
          
 
-        <Route path="/Pg1" element={<Courses />} />
+        <Route path="/" element={<Courses />} />
 
         <Route path="/Pg2" element={<Pg2 />} />
 
