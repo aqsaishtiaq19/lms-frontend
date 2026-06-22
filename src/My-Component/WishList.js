@@ -1,12 +1,44 @@
-import API from "./Api";
+const addToWishlist = async (courseId, e) => {
+  e.preventDefault();
+  e.stopPropagation();
 
-const addToWishlist = async (course) => {
   try {
     const token = localStorage.getItem("token");
 
-    await API.post(
-      "/wishlist",
-      { courseId: course._id },
+    if (!token) {
+      alert("Please login first");
+      return;
+    }
+
+    if (!courseId) {
+      alert("Invalid course ID");
+      return;
+    }
+
+    // 🔥 GET CURRENT WISHLIST FIRST
+    const existing = await axios.get(
+      "https://lms-backend-production-ada7.up.railway.app/api/wishlist",
+      {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      }
+    );
+
+    // 🔥 CHECK IF COURSE ALREADY EXISTS
+    const alreadyAdded = existing.data.find(
+      (item) => item.course._id === courseId
+    );
+
+    if (alreadyAdded) {
+      alert("Already in wishlist ❤️");
+      return;
+    }
+
+    // 🔥 ADD COURSE
+    await axios.post(
+      "https://lms-backend-production-ada7.up.railway.app/api/wishlist",
+      { courseId },
       {
         headers: {
           Authorization: `Bearer ${token}`
@@ -15,15 +47,9 @@ const addToWishlist = async (course) => {
     );
 
     alert("Added to Wishlist ❤️");
-  } catch (err) {
-    console.log(err);
-      if (err.response?.status === 400) {
-      alert("This course is already in your wishlist ❤️");
-    } else {
-      alert("Something went wrong. Please try again.");
-    }
-  }
-  }
-;
 
-export default addToWishlist;
+  } catch (error) {
+    console.log("Wishlist Error:", error.response?.data);
+    alert(error.response?.data?.message || "Failed to add wishlist");
+  }
+};

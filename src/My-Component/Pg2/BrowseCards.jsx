@@ -101,7 +101,7 @@ const BrowseCard = () => {
             <div className="go-corner">
               <button
                 className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a21a8c6b8573c95ad5f51a8", e)}
+                onClick={(e) => addToWishlist("6a248b8470c2c0752bf4dfd5", e)}
               >
                 +
               </button>
@@ -152,7 +152,7 @@ const BrowseCard = () => {
             <div className="go-corner">
               <button
                 className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a21a8a7b8573c95ad5f51a6", e)}
+                onClick={(e) => addToWishlist("6a248c6870c2c0752bf4dfd9", e)}
               >
                 +
               </button>
@@ -169,7 +169,7 @@ const BrowseCard = () => {
             <div className="go-corner">
               <button
                 className="wishlist-btn"
-                onClick={(e) => addToWishlist("6a1f6660e12ad32b90bc1353", e)}
+                onClick={(e) => addToWishlist("6a248e6070c2c0752bf4dfdf", e)}
               >
                 +
               </button>
