@@ -17,7 +17,7 @@ const addToWishlist = async (courseId, e) => {
 
     // 🔥 GET CURRENT WISHLIST FIRST
     const existing = await axios.get(
-      "https://lms-backend-production-ada7.up.railway.app/api/wishlist",
+      "https://my-projects.bonto.run/api/wishlist",
       {
         headers: {
           Authorization: `Bearer ${token}`
@@ -37,7 +37,7 @@ const addToWishlist = async (courseId, e) => {
 
     // 🔥 ADD COURSE
     await axios.post(
-      "https://lms-backend-production-ada7.up.railway.app/api/wishlist",
+      "https://my-projects.bonto.run/api/wishlist",
       { courseId },
       {
         headers: {

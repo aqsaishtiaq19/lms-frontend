@@ -56,7 +56,7 @@ const SignInForm = () => {
     }
     // Only runs if all fields filled!
     axios
-      .post("https://lms-backend-production-ada7.up.railway.app/api/register"
+      .post("https://my-projects.bonto.run/api/register"
         , {
         firstName,
         lastName,
