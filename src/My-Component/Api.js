@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://lms-backend-production-ada7.up.railway.app/api",
+  baseURL: "https://my-projects.bonto.run/",
 });
 
 export default API;
