@@ -70,7 +70,7 @@ function Header() {
               <NavDropdown title="Students" id="students-dropdown">
                 <NavDropdown.Item as={Link} to="/Student">Student Details</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/Student">Trending</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/Student">Wislist</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Student">Wishlist</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="#CardData">My Courses</NavDropdown.Item>
               </NavDropdown>
 
