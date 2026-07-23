@@ -12,7 +12,7 @@ const WishlistCards = () => {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get("https://my-projects.bonto.run/api/wishlist", {
+        const res = await axios.get("https://lms-backend-momin2.vercel.app/api/wishlist", {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -49,7 +49,7 @@ const WishlistCards = () => {
     setAnimating(id);
 
     try {
-      await axios.delete(`https://my-projects.bonto.run/api/wishlist/${id}`, {
+      await axios.delete(`https://lms-backend-momin2.vercel.app/api/wishlist/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }

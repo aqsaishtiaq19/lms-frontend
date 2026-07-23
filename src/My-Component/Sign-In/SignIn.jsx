@@ -56,7 +56,7 @@ const SignInForm = () => {
     }
     // Only runs if all fields filled!
     axios
-      .post("https://my-projects.bonto.run/api/register"
+      .post("https://lms-backend-momin2.vercel.app/api/register"
         , {
         firstName,
         lastName,

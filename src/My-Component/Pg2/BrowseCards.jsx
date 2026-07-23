@@ -22,7 +22,7 @@ const BrowseCard = () => {
       }
 
       await axios.post(
-        "https://my-projects.bonto.run/api/wishlist",
+        "https://lms-backend-momin2.vercel.app/api/wishlist",
         { courseId },
         {
           headers: {
